@@ -98,3 +98,11 @@ body {
 #table {
     float: right;
 }
+
+
+#pages {
+    float: left;
+    }
+#conv {
+    clear:both;
+}

@@ -10,16 +10,16 @@ import java.util.Base64;
 
 public class Encoder {
 
-    public void getEncoder() throws SQLException {
-        Request request = null;
-        ResultSet resultSet = null;
-        while(resultSet.next){
-            Blob img = resultSet.getBlob("Image");
-
-
-            byte[] imgData = img.getBytes(1, (int) img.length());
-            String encoder = Base64.getEncoder().encodeToString(imgData);
-            request.setAttribute("imgBase", encoder);
-        }
-    }
+//    public void getEncoder() throws SQLException {
+//        Request request = null;
+//        ResultSet resultSet = null;
+//        while(resultSet.next){
+//            Blob img = resultSet.getBlob("Image");
+//
+//
+//            byte[] imgData = img.getBytes(1, (int) img.length());
+//            String encoder = Base64.getEncoder().encodeToString(imgData);
+//            request.setAttribute("imgBase", encoder);
+//        }
+//    }
 }
